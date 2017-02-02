@@ -251,9 +251,10 @@ public class MoviesManagement {
                 
             }
             
-            System.out.println(a + " no existe");
+            
             
         }
+        System.out.println(a + " no existe");
    
     }
     
@@ -290,11 +291,13 @@ public class MoviesManagement {
     
     private static void checkIfXbox(List<Juego> juegos){
         System.out.println("\n\nVideojuegos de XBOX: \n");
+        int i = 0;
         for (Juego juego : juegos) {
             if (juego.getPlataforma() == Plataforma.XBOX) {
-                System.out.println(juego.getNombre());
+                i++;
             }
         }
+        System.out.println(i + " videojuegos de Xbox One");
     }
     
 }
